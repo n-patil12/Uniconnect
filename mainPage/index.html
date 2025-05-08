@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniConnect</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../ChatTab/chattab.css">
+    <link rel="stylesheet" href="../ChatTab/popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="app.js"></script>
+    <!-- <script type="module" src="../Profile_Builder/script.js"></script> -->
+    <script src="../ChatTab/chattab.js"></script>
+    <!-- <script src="client.js" type="module"></script> -->
+    <script src="./app.js" type="module"></script>
+</head>
+<body> 
+    <nav class="navbar">
+        <div class="navbar-left">
+            <!-- <img src="images/fire_logo.png" class="fire"> -->
+            <h3>UniConnect</h3>
+        </div>
+        <div class="navbar-right">
+            <div class="dropdown-container">
+                <div id="group-message-icon" class="group-message-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                
+                <div id="dropdown" class="dropdown">
+                    <p>No requests</p>
+                </div>
+            </div>
+            <a href="#" class="message-icon" onclick="openNav()"> 
+                <i class="fas fa-comment"></i>
+                <span class="badge">3</span>
+            </a>
+            <a href="../profiles/profile.html?type=user&id=U123" class="profile-icon">
+                <i class="fas fa-user-alt"></i>
+            </a>
+        </div>
+    </nav>
+    <div class="carousel-container">
+        <h3>Organizations you might like:</h3>
+        <div class="carousel-wrapper">
+            <button class="backButton">&#10094;</button>
+            <div class="carousel" id="carousel">
+                <!-- <a href="../profiles/organization.html?type=org&id=O4" class="carousel-item">
+                    <img src="images/wics_logo.png">
+                    <p>WICS</p>
+                </a>
+                <a href="../profiles/organization.html?type=org&id=O1" class="carousel-item">
+                    <img src="../profiles/images/alpfa.png">
+                    <p>ALPFA</p>
+                </a>
+                <a href="../profiles/organization.html?type=org&id=O2" class="carousel-item">
+                    <img src="images/acm.png">
+                    <p>ACM</p>
+                </a>
+                <a href="../profiles/organization.html">
+                <a href="../profiles/organization.html?type=org&id=O3" class="carousel-item">
+                    <img src="images/logica.png">
+                    <p>LOGICA</p>
+                </a>
+                </a> -->
+            </div>
+            <button class="nextButton">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="carousel-container" id="joinedOrgs">
+        <h3>Organizations you joined:</h3>
+        <div class="carousel-wrapper">
+            <button class="backButton">&#10094;</button>
+            <div class="carousel" id="carousel1">
+
+            </div>
+            <button class="nextButton">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="carousel-container">
+        <h3>Students you might know:</h3>
+        <div class="carousel-wrapper">
+            <button class="backButton" id = "backButton">&#10094;</button>
+            <div class="carousel" id="carousel3">
+                <!-- <a href="../profiles/profile.html?type=user&id=U321" class="carousel-item">
+                    <img src="../profiles/images/michelle.jpg">
+                    <p>Michelle Robinson</p>
+                </a>
+                <a href="../profiles/profile.html?type=user&id=U789" class="carousel-item">
+                    <img src="../profiles/images/david.jpg">
+                    <p>David Kim</p>
+                </a>
+                <a href="../profiles/profile.html?type=user&id=U987" class="carousel-item">
+                    <img src="../profiles/images/natalia.jpg">
+                    <p>Natalia Russo</p>
+                </a>
+                <a href="../profiles/profile.html?type=user&id=U001" class="carousel-item">
+                    <img src="../profiles/images/naomi.jpg">
+                    <p>Naomi Seto</p>
+                </a> -->
+            </div>
+            <button class="nextButton" id="nextButton">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="carousel-container">
+        <h3>Ongoing Discussions:</h3>
+        <div class="vertical-carousel-wrapper">
+            <!-- <button class="backButton">&#10094;</button> -->
+            <div class="veritcal-carousel" id="carousel">
+                <a class="uid" href="../discussion/discussion.html">
+                    <div class="banner">
+                        <img id="pfp" src="../profiles/images/profile_pic.jpg" alt="Avatar">
+                        <div class="banner-text"><b>Tom Jackson</b></div>
+                        <div class="banner-text"> <b>|</b> </div>
+                        <div class="banner-text"><b>Where is the best place on campus to study?</b></div>    
+                    </div>
+                </a>
+                <a class="uid" href="../discussion/discussion2.html">
+                    <div class="banner">
+                        <img id="pfp" src="../profiles/images/uic.png" alt="Avatar">
+                        <div class="banner-text"><b>UIC Registration Services</b></div>
+                        <div class="banner-text"><b>|</b></div>
+                        <div class="banner-text"><b>Registration opens next week!</b></div>    
+                    </div>
+                </a>
+            </div>
+            <!-- <button class="nextButton">&#10095;</button> -->
+        </div>
+    </div>
+
+    <template class="request-container">
+        <div class="request">
+            <a><p>User</p></a>
+            <div>
+                <button class="check-button">
+                    <i class="fa-solid fa-square-check"></i>
+                </button>
+                <button class="x-button">
+                    <i class="fa-solid fa-square-xmark"></i>
+                </button>
+            </div>
+        </div>
+    </template>
+
+    <div class="chatcont">
+
+        <div class="chat-popup" id="myForm">
+            <form class="form-container">
+              <h1>John</h1><!-- 
+          
+              <label for="msg"><b>Message</b></label>
+              <textarea placeholder="Type message.." name="msg" required></textarea> -->
+              <div class="scrollable-chat">
+                <div class="container">
+                    <!-- <h3>Name</h3> -->
+                    <img src="../Profile_Builder/profile_pic.jpg" alt="Avatar">
+                    <p>Hello. How are you today?</p>
+                    <span class="time-right">11:00</span>
+                </div>
+
+                <div class="container darker">
+                    <img src="../Profile_Builder/profile_pic.jpg" alt="Avatar" class="right">
+                    <p>Coming to the meeting today?</p>
+                    <span class="time-left">11:01</span>
+                </div>
+
+                <div class="container">
+                    <img src="../Profile_Builder/profile_pic.jpg" alt="Avatar">
+                    <p>For sure</p>
+                    <span class="time-right">11:00</span>
+                </div>
+            </div>
+
+              <textarea placeholder="Type message.." name="msg" id= "msg" required></textarea> 
+
+              <button type="button" class="btn" onclick="appendMsg()">Send</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="chat-ppl" onclick="openForm()">
+                <img src="../Profile_Builder/profile_pic.jpg" alt="Avatar">
+                <span class="chat-name">John</span>
+            </div>
+        </div>
+
+        
+    </div>
+
+</body>
+</html>
