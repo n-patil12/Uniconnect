@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Profile Page" content="width=device-width, initial-scale=1.0">
+    <title>Discussion</title>
+    <link rel="stylesheet" href="../mainPage/styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navbar-left">
+            <!-- <img class="fire" src ="../mainPage/images/fire_logo.png"/> -->
+            <h3 class ="uniconnect"> UniConnect </h3>
+        </div>
+        <div class="navbar-right">
+            <a href="../mainPage/index.html" class="home-icon">
+                <i class="fa fa-home"></i>
+            </a>
+            <a href="#" class="group-message-icon">
+                <i class="fas fa-users"></i>
+                <span class="badge">1</span>
+            </a>
+            <a href="#" class="message-icon">
+                <i class="fas fa-comment"></i>
+                <span class="badge">3</span>
+            </a>
+            <a href="../profiles/profile.html?type=user&id=U123" class="profile-icon">
+                <i class="fas fa-user-alt"></i>
+            </a>
+            
+        </div>
+    </nav>
+
+    <main class="discussion">
+        <h3>Where is the best place on campus to study?</h3>
+        <!-- friendList class contains banner for each friend -->
+        <div class="list" id="discussion-list">
+            <div class="initial-post">
+                <div class="name-field">
+                    <img class="avatar" src="../profiles/images/profile_pic.jpg" alt="Avatar">
+                    <div class="reply-text" id="Name"><b>Tom Jackson</b></div>
+                </div>
+                <div class="post-text">
+                    Basically the title, I have a 2 hour gap in my upcoming schedule but everywhere I go is always packed. Is there some hidden spot on campus where I can do my work???   
+                </div>
+                <div class="footer">
+                    <p>Date posted: 4/2/25 12:03 pm</p>
+                    <i id='reply-button' class="fa-solid fa-reply"></i>
+                </div>
+            </div>
+
+            <hr>
+           
+            <!-- <div class="no-reply">
+                <p>No replies yet</p>
+            </div> -->
+
+            <div class="reply-section">
+                <div class="reply">
+                    <div class="name-field">
+                        <img class="avatar" src="../profiles/images/profile_pic.jpg" alt="Avatar">
+                        <div class="reply-text">Jordan Wells</div>
+                    </div>
+                    <div class="reply-text">The library is pretty decent imo, you kinda have to look for a bit but I think I study better there than anywhere else.</div>
+                    <div class="footer">
+                        <p>Date posted: 4/2/25 12:45 pm</p>
+                        <i class="fa-solid fa-reply"></i>
+                    </div>
+                </div>
+                <div class="reply-reply">
+                    <div class="name-field">
+                        <img class="avatar" src="../profiles/images/profile_pic.jpg" alt="Avatar">
+                        <div class="reply-text">Isabella Rojas</div>
+                    </div>
+                    <div class="reply-text">Library wifi sucks 💀</div>
+                    <div class="footer">
+                        <p>Date posted: 4/2/25 2:10 pm</p>
+                        <i class="fa-solid fa-reply"></i>
+                    </div>
+                </div>
+                <div class="reply-reply">
+                    <div class="name-field">
+                        <img class="avatar" src="../profiles/images/profile_pic.jpg" alt="Avatar">
+                        <div class="reply-text">Jordan Wells</div>
+                    </div>
+                    <div class="reply-text">Yeah it's not great but I still think I can focus there easier.</div>
+                    <div class="footer">
+                        <p>Date posted: 4/2/25 2:18 pm</p>
+                        <i class="fa-solid fa-reply"></i>
+                    </div>
+                </div>
+                <hr>
+                <div class="reply">
+                    <div class="name-field">
+                        <img class="avatar" src="../profiles/images/profile_pic.jpg" alt="Avatar">
+                        <div class="reply-text">John Brown</div>
+                    </div>
+                    <div class="reply-text">Nope sorry</div>
+                    <div class="footer">
+                        <p>Date posted: 4/3/25 10:09 am</p>
+                        <i class="fa-solid fa-reply"></i>
+                    </div>
+                </div>
+                <hr>
+                <div class="reply">
+                    <div class="name-field">
+                        <img class="avatar" src="../profiles/images/profile_pic.jpg" alt="Avatar">
+                        <div class="reply-text">Miguel Rodriguez</div>
+                    </div>
+                    <div class="reply-text">The CS Lounge is my favorite. There's also a bunch of booths in SELE with outlets if you can find an open one. Besides that, I'd recommend some of the "Hall" buildings have some places for students that aren't too packed.</div>
+                    <div class="footer">
+                        <p>Date posted: 4/4/25 2:22 pm</p>
+                        <i class="fa-solid fa-reply"></i>
+                    </div>
+                </div>
+            </div>
+
+            <template id="temp-reply">
+                <div class="reply">
+                    <div class="name-field">
+                        <img class="avatar" src="../profiles/images/profile_pic.jpg" alt="Avatar">
+                        <div class="reply-text">User</div>
+                    </div>
+                    <!-- <input class="reply-input"> -->
+
+                    <blockquote id="reply-text" contenteditable="true">
+                        Write something...
+                    </blockquote>
+
+                    <div class="footer">
+                        <p>Date posted: 3/16/25 12:03 pm</p>
+                        <div>
+                            <i id="reply-x" class="fa-solid fa-x"></i>
+                            <i id="reply-check" class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </template>
+
+            <template id="temp-reply-reply">
+                <div class="reply-reply">
+                    <div class="name-field">
+                        <img class="avatar" src="../profiles/images/profile_pic.jpg" alt="Avatar">
+                        <div class="reply-text">User</div>
+                    </div>
+                    <div class="reply-text">Reply</div>
+                    <div class="footer">
+                        <p>Date posted: 3/16/25 12:03 pm</p>
+                        <i class="fa-solid fa-reply"></i>
+                    </div>
+                </div>
+            </template>
+
+        
+    </main>
+    <script src="disscussion.js" type="module"></script>
+</body>
+</html>
