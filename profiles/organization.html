@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Organization Page" content="width=device-width, initial-scale=1.0">
+    <title>Organization</title>
+    <!-- <link rel="stylesheet" href="../mainPage/styles.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../ChatTab/chattab.css">
+    <link rel="stylesheet" href="../ChatTab/popup.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="../ChatTab/chattab.js"></script>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="navbar-left">
+            <h3 class ="uniconnect"> UniConnect </h3>
+        </div>
+        <div class="navbar-right">
+            <a href="../mainPage/index.html" class="home-icon">
+                <i class="fa fa-home"></i>
+            </a>
+            <div class="dropdown-container">
+                <div id="group-message-icon" class="group-message-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                
+                <div id="dropdown" class="dropdown">
+                    <p>No requests</p>
+                </div>
+            </div>
+            <a href="#" class="message-icon" onclick="openNav()">
+                <i class="fas fa-comment"></i>
+                <span class="badge">3</span>
+            </a>
+            <a href="../profiles/profile.html?type=user&id=U123" class="profile-icon">
+                <i class="fas fa-user-alt"></i>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Represents the profile and picture of the organization -->
+        <section class="profile">
+            <div class="avatar">
+                <img id="orgImg" src="./images/uic.png" alt="avatar" id="pfp">
+            </div>
+
+            <div class="name-line">
+                <h2 id="organizationName">Name</h2>
+                <button id="joinButton">Join Organization</button>
+            </div>
+            
+            <div class="info-line">
+                <p>Mission: </p>
+                <p id="organizationMission"></p>
+            </div>
+
+            <div class="info-line">
+                <p id="website">Website: </p>
+                <p id="organizationSite"></p>
+            </div>        
+            </section>
+        
+        <!-- Represents section where org's members and events are displayed-->
+        <section class="members">
+            <h3>Members</h3>
+            <!-- memberList class contains banner for each member -->
+            <div class="list" id="memberList">
+                <!-- dynamic member adding -->
+            </div>
+        </section>
+
+        <section class="events"> 
+            <h3>Upcoming Events</h3>
+            <!-- Area where events are displayed -->
+            <div class="list" id="eventList">
+                <!-- dynamic event adding -->
+            </div>
+        </section>
+
+        <!-- templates for adding members and event items to each section -->
+
+        <template class="item" id="memberItem">
+            <a class="mid" href="profile.html">
+                <div class="banner" id="memberBanner">
+                    <img id="memberPfp" src="./images/pfp.png" alt="Friend Avatar">
+                    <div class="banner-text" id="memberName"></div>
+                    <div class="banner-text"> | </div>
+                    <div class="banner-text" id="memberBio"></div>
+                </div>
+            </a>
+        </template>
+
+        <template class="item" id="eventItem">
+            <div class="banner" id="eventBanner">
+                <div class="banner-text" id="eventDate"></div>
+                <div class="banner-text"> | </div>
+                <div class="banner-text" id="eventDescription"></div>
+            </div>
+        </template>
+
+        <template class="item" id="discussionItem">
+            <div class="banner" id="discussionBanner">
+                <div class="banner-text" id="discussionDate"></div>
+                <div class="banner-text"> | </div>
+                <div class="banner-text" id="discussionDescription"></div>
+            </div>
+        </template>
+
+        <template class="request-container">
+            <div class="request">
+                <a><p>User</p></a>
+                <div>
+                    <button class="check-button">
+                        <i class="fa-solid fa-square-check"></i>
+                    </button>
+                    <button class="x-button">
+                        <i class="fa-solid fa-square-xmark"></i>
+                    </button>
+                </div>
+            </div>
+        </template>
+
+        <div class="chatcont">
+
+            <div class="chat-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                  <h1>John</h1><!-- 
+              
+                  <label for="msg"><b>Message</b></label>
+                  <textarea placeholder="Type message.." name="msg" required></textarea> -->
+                  <div class="scrollable-chat">
+                    <div class="container"> <!-- incomign -->
+                        <img src="../Profile_Builder/profile_pic.jpg" alt="Avatar">
+                        <p>Hello. How are you today?</p>
+                        <span class="time-right">11:00</span>
+                    </div>
+    
+                    <div class="container darker">
+                        <img src="../Profile_Builder/profile_pic.jpg" alt="Avatar" class="right">
+                        <p>Coming to the meeting today?</p>
+                        <span class="time-left">11:01</span>
+                    </div>
+    
+                    <div class="container"> <!-- incomign -->
+                        <img src="../Profile_Builder/profile_pic.jpg" alt="Avatar">
+                        <p>For sure</p>
+                        <span class="time-right">11:00</span>
+                    </div>
+                </div>
+    
+                  <textarea placeholder="Type message.." name="msg" id= "msg" required></textarea> 
+    
+                  <button type="submit" class="btn">Send</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+    
+    
+            <div id="mySidebar" class="sidebar">
+                <div class="closemargin-div">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                </div>
+                <div class="chat-ppl" onclick="openForm()">
+                    <img src="../Profile_Builder/profile_pic.jpg" alt="Avatar">
+                    <span class="chat-name">John</span>
+                </div>
+            </div>
+    
+            
+        </div>
+
+    </main>
+    <script src="organization.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+/* Header area */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    font-family: 'Gothic A1', sans-serif;
+    background-color: #0a1936;
+    color: #fff;
+    border-bottom-color: #5d76a8;
+    border-bottom-width: 15px;
+    border-bottom-style: solid;
+}
+
+.navbar-left h3{
+    color: #8daef1;
+    font-size: 30px;
+    margin-left: 550px;
+}
+
+.navbar-left {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    align-items: center;
+    display: flex;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+    position: relative;
+}
+
+.message-icon .fas {
+    font-size: 40px;
+}
+
+.home-icon{
+    font-size: 40px;
+}
+
+.group-message-icon .fas{
+    font-size: 40px;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.fire{
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 50px;
+    padding-right: 15px;
+    margin-bottom:10px;
+    
+}
+
+.profile-icon .fas {
+    font-size: 40px;
+}
+
+/* dropdown */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 40px;
+}
+  
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: #384B70;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px black;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.dropdown p, .request {
+    border-bottom: #eee solid 1px;
+    padding: 10px;
+    margin: 0px;
+    font-size: medium;
+    opacity: 60%;
+}
+
+.dropdown a {
+    margin: 0px;
+}
+
+.request {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 100%;
+    padding: 0px;
+}
+
+.check-button {
+    background-color: transparent; 
+    border: none; 
+    color: green; 
+    font-size: 21px;
+    cursor: pointer; 
+}
+
+.x-button {
+    background-color: transparent;
+    border: none; 
+    color: red; 
+    font-size: 21px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.dropdown a p{
+    color: black;
+    opacity: 100%;
+}
+
+.dropdown p:last-child, .request:last-child {
+    border-bottom: 0px;
+}
+
+.dropdown-container:hover .dropdown {
+    display: block;
+}
+
+/* Profile info area */
+
+.avatar img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border: 3px, solid, #384B70;
+}
+
+.name-line {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.name-line button{
+    margin-top: 22px;
+    margin-left: 10px;
+    cursor: pointer;
+    width: 100px;
+    height: 25px;
+    background-color: #6994e4;
+    border-radius: 10px;
+}
+
+.info-line {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.info-line p, #organizationName, #userName {
+    margin-bottom: 0;
+}
+
+.name-line h2 {
+    line-height: 0;
+}
+
+.name-line i {
+    visibility: hidden;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+body {
+    font-family: Georgia, serif;
+    font-size: large;
+    margin: 0px;
+}
+
+.profile {
+    margin: 3%;
+    color:#fff
+}
+
+/* Friends and Organizations area */
+
+.friends h3, .organizations h3, .members h3, .events h3 {
+    font-family: 'Gothic A1', sans-serif;
+    background-color:#e63124 ;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 2%;
+    color:#fff;
+}
+
+.list {
+    background-color: rgb(223, 219, 219);
+    border: #435C8C solid;
+    border-radius: 7px;
+    height: 200px;
+    margin: 2%;
+    overflow: auto;
+}
+
+.banner {
+    display: flex; 
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(201, 196, 196);
+    align-items: center;
+}
+
+#eventBanner {
+    padding: 20px;
+}
+
+#friendPfp, #orgPfp, #memberPfp{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: 3px, solid, #384B70;
+
+}
+
+.banner-text {
+    white-space: nowrap;
+    margin-left: 2%;
+}
+
+#friendBio, #orgDescription, #memberBio {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.uid, .oid, .mid{
+    color: inherit;
+    text-decoration: none;
+}
+
+.closemargin-div{
+    margin-top: 50px;
+}
+
+body{
+    /* background-image: url("../mainPage/city.jpg"); */
+    background-color: #040f25;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+/* .info-line{
+    background-color: #4f6792;
+    padding-bottom: 20px;
+} */
