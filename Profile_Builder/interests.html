@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CS 440 Profile Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="interests.css">
+    <script type="module" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script type = "module" src="interests.js"></script>
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav class ="blue_heading">
+        <div class="grid">
+            <h3 class ="uniconnect"> UniConnect </h3>
+        </div>
+    </nav>
+    <div class="profile_builder1">
+        <div class="user_interests"> My Interests</div>
+        <div class="user_bio">
+            <label>Write a bio about yourself:</label>
+            <textarea type="text" class="bio" id="profile_bio" name="bio" placeholder="Type your content here..."></textarea><br><br>
+        </div>
+        <div class="interest_selection">
+            <label>Select any interests/hobbies that you do:</label>
+            <div class="vertical-menu">
+              <a>
+                <div class="interests-grid" id="blue_row">
+                  <button class="interest-card"><img src="art_440.png" class="inter_img"/><br>ART</button>
+                  <button class="interest-card"><img src="planting_440.png" class="inter_img"/><br>GARDENING</button>
+                  <button class="interest-card"><img src="history_440.png" class="inter_img"/><br>HISTORY</button>
+                  <button class="interest-card"><img src="dance_440.png" class="inter_img"/><br>DANCE</button>
+                </div>
+              </a>
+              <a>
+                <div class="interests-grid" id="blue_row">
+                  <button class="interest-card"><img src="music_440.png" class="inter_img"/><br>MUSIC</button>
+                  <button class="interest-card"><img src="travel_440.png" class="inter_img"/><br>TRAVEL</button>
+                  <button class="interest-card"><img src="coding_440.png" class="inter_img"/><br>TECH</button>
+                  <button class="interest-card"><img src="reading_440.png" id="reading"/><br>READING</button>
+                </div>
+              </a>
+              <a>
+                <div class="interests-grid" id="blue_row">
+                  <button class="interest-card"><img src="blog.png" class="inter_img"/><br>BLOGGING</button>
+                  <button class="interest-card"><img src="write.png" class="inter_img"/><br>WRITING</button>
+                  <button class="interest-card"><img src="sports_440.png" class="inter_img"/><br>SPORTS</button>
+                  <button class="interest-card"><img src="act.png" id="reading"/><br>ACTING</button>
+                </div>
+              </a>
+              <a>
+                <div class="interests-grid" id="blue_row">
+                  <button class="interest-card"><img src="volunteer.png" class="inter_img"/><br>VOLUNTEERING</button>
+                  <button class="interest-card"><img src="photograph.png" class="inter_img"/><br>PHOTOGRAPHY</button>
+                  <button class="interest-card"><img src="cook.png" class="inter_img"/><br>COOKING</button>
+                  <button class="interest-card"><img src="fitness.png" id="reading"/><br>FITNESS</button>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="myButtons">
+            <a href="index.html"><button class="next_button">←</button></a>
+            <button class="next_button2" onclick="submission_check_bio()">→</button>
+        </div>
+    </div>
+  </body>
+</html>

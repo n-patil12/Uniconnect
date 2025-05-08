@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CS 440 Profile Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="module" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- <script>
+        const inputs = form.querySelectorAll("input");
+
+        // Load saved data
+        const savedData = JSON.parse(localStorage.getItem("formData")) || {};
+        inputs.forEach(input => {
+        input.value = savedData[input.name] || "";
+        });
+
+        // Save when typing
+        inputs.forEach(input => {
+        input.addEventListener("input", () => {
+            const updatedData = {};
+            inputs.forEach(i => updatedData[i.name] = i.value);
+            localStorage.setItem("formData", JSON.stringify(updatedData));
+        });
+        });
+    </script> -->
+    <nav class ="blue_heading">
+        <div class="grid">
+            <!-- <img class="flame_img" src ="image.png"/> -->
+            <h3 class ="uniconnect"> UniConnect </h3>
+        </div>
+    </nav>
+    <div class="profile_builder1">
+        <div class="who_am_i"> Who Am I?</div>
+        <div class="user_name">
+            <label>Name:</label>
+            <input type="text" class="name" id="profile_name" name="name" ><br><br>
+        </div>
+        <div class="user_pronouns">
+            <label>Pronouns:</label>
+            <input type="text" class="pronouns" id="profile_pronouns" name="pronouns"><br><br>
+        </div>
+        <div class="user_age">
+            <label>Age:</label>
+            <input type="text" class="age" id="profile_age" name="age"><br><br>
+        </div>
+        <div class="user_major">
+            <label>Major:</label>
+            <input type="text" class="major" id="profile_major" name="major"><br><br>
+        </div>
+        <div class="user_year">
+            <label>Year:</label>
+            <input type="text" class="year" id="profile_year" name="year"><br><br>
+        </div>
+        <label class="user_pic">
+            <label>Insert Profile Picture:</label>
+            <img src="profile_pic.jpg" class="picture" id="new_avatar">
+            <input type="file" name="file" accept="image/*" id="input-file" onchange="change_image()">
+        </label>
+        <button class="next_button" onclick="submission_check()">→</button>
+    </div>
+    <div class="profile_builder2"></div>
+
+    <!-- <ul id="clubList"></ul> -->
+  </body>
+</html>

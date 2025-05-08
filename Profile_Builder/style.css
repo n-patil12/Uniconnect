@@ -1,0 +1,186 @@
+/* ------------------------------------------------------------------------ 
+this is for the blue header at the top */
+
+body{
+    background-image: url("people_again.jpg");
+    margin: 0px;
+    overflow-x: hidden;
+    /* background-color: #384B70; */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.blue_heading{
+    background-color: #050c16;
+    margin-top: 0px;
+    border-bottom-color: #ed3838;
+    border-bottom-width: 15px;
+    border-bottom-style: solid;
+}
+
+.grid{
+    display: flex;
+}
+
+.grid h3{
+    margin-left: 610px;
+    font-size: 30px;
+    color:#679ae0;
+    font-weight: bolder;
+}
+
+.flame_img{
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 50px;
+    padding-right: 15px;
+}
+
+.uniconnect{
+    color: antiquewhite;
+    font-size: 25px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    padding-right: 800px;
+}
+
+.menu_panel{
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+}
+
+/* ---------------------------------------------------------------------- */
+
+.profile_builder1{
+    width: 800px;
+    height: 800px;
+    background-color: #0d1d33;
+    margin-left: 270px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 60px;
+    box-shadow: 10px 10px 5px rgb(6, 39, 39);
+    border-color: rgb(11, 77, 77);
+    border-width: 15px;
+    border-style: solid;
+}
+
+.who_am_i{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 40px;
+}
+
+.user_name{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 80px;
+    margin-top: -10px;
+}
+.name{
+    width: 600px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.user_pronouns{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 80px;
+    margin-top: -10px;
+}
+.pronouns{
+    width: 600px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.user_age{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 80px;
+    margin-top: -10px;
+}
+.age{
+    width: 600px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.user_major{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 80px;
+    margin-top: -10px;
+}
+.major{
+    width: 600px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.user_year{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 80px;
+    margin-top: -10px;
+
+}
+.year{
+    width: 600px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.user_pic{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 80px;
+    margin-top: -10px;
+    cursor: pointer;
+
+}
+
+input[type="file"] {
+    display: none; 
+}
+
+.picture{
+    width: 170px;
+    height: 170px;
+    padding-left: 230px;
+    padding-top: 30px;
+}
+
+.next_button{
+    width: 100px;
+    height: 40px;
+    margin-left: 650px;
+    font-size: 25px;
+    box-shadow: 10px 10px 5px rgb(0, 0, 0);
+    background-color: rgb(212, 182, 10);
+    border-radius: 10px;
+    margin-top: -10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+label{
+    color:antiquewhite;
+}

@@ -1,0 +1,177 @@
+/* ------------------------------------------------------------------------ 
+this is for the blue header at the top */
+/* .blue_heading{
+    background-color: #384B70;
+    margin-top: 0px;
+} */
+
+.grid{
+    display: flex;
+}
+
+.uniconnect{
+    color: antiquewhite;
+    font-size: 25px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    padding-right: 800px;
+}
+
+.menu_panel{
+    display: flex;
+    align-items: center;
+    margin:0px;
+}
+
+body{
+    margin:0px;
+}
+
+
+/* ---------------------------------------------------------------------- */
+
+/* .profile_builder1{
+    width: 800px;
+    height: 800px;
+    background-color: #D1D1D1;
+    margin-left: 260px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 60px;
+    box-shadow: 10px 10px 5px rgb(95, 103, 105);
+
+} */
+
+.user_interests{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 40px;
+}
+
+.user_bio{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 80px;
+    margin-top: -10px;
+}
+.bio{
+    width: 600px;
+    height: 150px;
+    border-radius: 10px;
+    border: none;
+}
+
+textarea {
+    vertical-align: top;
+    text-align: left;
+    padding-top: 0.5em;
+  }
+
+/*-------------------------------------------------------------------------*/
+.inter_img{
+    width: 85px;
+    height: 85px;
+}
+
+#reading{
+    margin-top: 10px;
+    width: 90px;
+    height: 70px;
+}
+.interest_selection{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 80px;
+    margin-top: -10px;
+}
+
+.interests-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 10px;
+  }
+
+.vertical-menu {
+    margin-top: 10px;
+    width: 650px;
+    height: 350px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    background-color: none;
+  }
+  
+/* .vertical-menu a {
+    color: black;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+} */
+
+#blue_row .interest-card {
+    background-color: #218380;
+    width: 120px;
+    height: 120px;
+    border-color: #1c4544;
+    border-width: 3px;
+    border-style: solid;
+    text-align:center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 20px;
+    color: #ffffff;
+    font-weight: bolder;
+  }
+  
+
+/*this is for the interests selection*/
+
+.next_button{
+    width: 100px;
+    height: 40px;
+    font-size: 25px;
+    margin-left: 250px;
+    box-shadow: 10px 10px 5px rgb(0, 0, 0);
+    background-color: rgb(212, 182, 10);
+    border-radius: 10px;
+    
+}
+
+/* .item_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+} */
+
+.next_button2{
+    width: 100px;
+    height: 40px;
+    margin-left:470px;
+    font-size: 25px;
+    box-shadow: 10px 10px 5px rgb(0, 0, 0);
+    background-color: rgb(212, 182, 10);
+    border-radius: 10px;
+    margin-top: -10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.myButtons{
+    display:flex;
+    flex-direction: row;
+    margin-top: -80px;
+    margin-left: 100px;
+}
+
+/* .select_flex{
+    display: flex;
+    flex-direction: row;
+} */
+
